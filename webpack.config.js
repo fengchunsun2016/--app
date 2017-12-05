@@ -15,19 +15,6 @@ module.exports = {
         filename: "[name].js",
         path: path.resolve('dist')
     },
-    /*module: {
-        rules:[
-            {test:/\.js$/,use:'babel-loader',exclude:/node_modules/},
-            {test:/\.less$/,use:extract.extract(['style-loader','css-loader',{
-                loader:'postcss-loader',
-                options:{
-                    plugins:[
-                        require('autoprefixer') //添加css前缀
-                    ]
-                }
-            },'less-loader'])}
-        ]
-    },*/
     module: {
         rules:[
             {test:/\.js$/,use:'babel-loader',exclude:/node_modules/},
